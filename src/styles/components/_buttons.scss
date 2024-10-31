@@ -1,0 +1,26 @@
+@use '../functions' as *;
+@use '../variables' as *;
+.button {
+    padding: rem(12);
+    font-size: rem(18);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        background-color: $purple;
+        color: $textColor;
+    }
+
+    @media (max-width: rem(1024)) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: rem(640)) {
+        display: block;
+        width: 100%;
+    }
+}

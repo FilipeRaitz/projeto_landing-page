@@ -1,0 +1,47 @@
+@use '../functions' as *;
+@use '../variables' as *;
+
+.infos-bar {
+    background-color: white;
+    padding: rem(16) rem(24);
+    color: $secondaryTextColor;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+
+    &__infos {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: rem(40);
+
+        &__item {
+            font-size: rem(14);
+            
+            b {
+                font-size: rem(18);
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: rem(640)) {
+        display: block;
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: rem(24);
+            }
+        }
+        
+    }
+
+    @media (max-width: rem(1024)) {
+        &__infos {
+            gap: rem(16);
+
+        }
+        
+    }
+}

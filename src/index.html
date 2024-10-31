@@ -4,11 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
-    <h1>Ola</h1>
-    <img src="./images/backend.png" alt="">
+    <header class="hero">
+        <div class="container">
+            <img src="./images/ebac_logo.svg" alt="logo ebac" class="hero__logo">
+            <p class="hero__text">
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2022 às 19hrs
+                    </li>
+                </ul>
+                <a class="button button--primary" href="#">
+                    Garanta sua Vaga
+                </a>
+            </div>
+        </div>        
+    </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Front-end
+                </h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.
+                </p> 
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="front-end">
+        </div>
+    </section>
+    <section class="event event--backend">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Back-end
+                </h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.
+                </p> 
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="back-end">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Data Science
+                </h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.
+                </p> 
+            </div>
+            <img class="event__image" src="./images/data.png" alt="data Science">
+        </div>
+    </section>
+    <section class="event event--ux">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    UX / UI 
+                </h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.
+                </p> 
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="ui ux">
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
