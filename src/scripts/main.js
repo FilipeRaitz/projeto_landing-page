@@ -20,4 +20,9 @@ const contaAsHoras = setInterval(function() {
     const segundos = Math.floor((distancia % minutoEmMs) / segundoEmMs);
     
     document.getElementById('contador').innerHTML = `${dias} dias ${horas} horas ${minutos} minutos ${segundos} segundos`;
+
+    if (distancia < 0) {
+        clearInterval(contaAsHoras);
+        document.getElementsByClassName('hero__text')[0].innerHTML = 'Evento encerrado';
+    }
 }, 1000)
